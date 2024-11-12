@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Course</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <style>
+            body {
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #534747;
+            }
+
+            section {
+                height: 300px;
+                width: 500px;
+                background-color: white;
+                border: 2px solid black;
+                padding: 10px;
+                border-radius: 25px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            section .input-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        </style>
+ 
+        <section>
+            <div class="input-container">
+                <label for="firstname">Prénom</label>
+                <input id="firstname" type="text">
+            </div>
+            <input id="lastname" type="text" placeholder="Votre nom">
+            <button>Valider</button>
+        </section>
+
+        <script type="text/javascript">
+            let age = 28
+            let str = 'hello'
+
+            console.log(age + str, typeof(age + str))
+        </script>
+
+        <script type="text/javascript" src="script.js"></script>
+
+    </body>
+</html>
