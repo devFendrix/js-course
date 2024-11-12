@@ -36,21 +36,25 @@
                 align-items: center;
             }
         </style>
- 
         <section>
             <div class="input-container">
                 <label for="firstname">Prénom</label>
                 <input id="firstname" type="text">
             </div>
             <input id="lastname" type="text" placeholder="Votre nom">
-            <button>Valider</button>
+            <button id="valid-btn">Valider</button>
         </section>
 
         <script type="text/javascript">
-            let age = 28
-            let str = 'hello'
+            // Récupération des éléments HTML
+            let firstname = document.getElementById('firstname')
+            let lastname = document.getElementById('lastname')
+            let btnValid = document.getElementById('valid-btn')
 
-            console.log(age + str, typeof(age + str))
+            // Ajouter une écoute sur un event de type click
+            btnValid.addEventListener('click', () => {
+                alert("Ceci est le contenu du premier input " + firstname.value)
+            })
         </script>
 
         <script type="text/javascript" src="script.js"></script>
